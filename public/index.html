@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nepal Visuals</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #map {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+    }
+    .button-container {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nepal Visuals</h1>
+
+  <div class="button-container">
+    <button onclick="loadMap('nepal')">Nepal Map</button>
+    <button onclick="loadMap('provinces')">Provinces</button>
+    <button onclick="loadMap('districts')">Districts</button>
+    <button onclick="loadMap('municipalities')">Municipalities</button>
+    <button onclick="loadMap('district_hqs')">District Headquarters</button>
+    <button onclick="loadMap('wards')">Wards</button>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
